@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/Id_Profile"
+        android:icon="@drawable/profile"
+        android:title="My Profile" />
+
+    <item
+        android:id="@+id/Id_Leaves"
+        android:icon="@drawable/leaves"
+        android:title="My Leaves" />
+
+    <item
+        android:id="@+id/Id_My_Team"
+        android:icon="@drawable/team"
+        android:title="My Team" />
+
+    <item
+        android:id="@+id/Id_Approval"
+        android:icon="@drawable/pendingleave"
+        android:title="Pending Approval" />
+    <item
+        android:id="@+id/Id_TeamLeaves"
+        android:icon="@drawable/leaves"
+        android:title="Team Leaves" />
+
+    <item
+        android:id="@+id/Id_Tickets"
+        android:icon="@drawable/ticket"
+        android:title="Tickets" />
+    <item
+        android:id="@+id/Id_Setting"
+        android:title="Setting"
+        android:icon="@drawable/settings"/>
+
+
+
+
+</menu>

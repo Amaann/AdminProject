@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e0e1e1"
+    tools:context=".ProfileFragment">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Id_CardView_One"
+        android:layout_width="match_parent"
+        android:layout_margin="40dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/Id_Cons_One"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:id="@+id/Id_circle_Iv_Profile"
+                    android:layout_width="150dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/aman"
+                    app:layout_constraintBottom_toTopOf="@+id/Id_Tv_Role"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/Id_Tv_Role"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="System Admin Support"
+                    android:textColor="#676A6C"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/Id_Tv_Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="@+id/Id_circle_Iv_Profile" />
+
+
+                <TextView
+                    android:id="@+id/Id_Tv_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:text="Aman Kumar"
+                    android:textColor="#676A6C"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toTopOf="@+id/Id_Tv_Mobile"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/Id_Tv_Mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="7022266557"
+                    android:textColor="#676A6C"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/Id_Tv_Mail"
+                    app:layout_constraintStart_toEndOf="@+id/Id_Iv_Mobile" />
+
+                <TextView
+                    android:id="@+id/Id_Tv_Mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="aman@zopnow.com"
+                    android:textColor="#676A6C"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/Id_Iv_Map"
+                    app:layout_constraintStart_toEndOf="@+id/Id_Iv_Mail" />
+
+                <ImageView
+                    android:id="@+id/Id_Iv_Mobile"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/call"
+                    app:layout_constraintStart_toStartOf="@+id/Id_Tv_Name"
+                    app:layout_constraintTop_toTopOf="@+id/Id_Tv_Mobile" />
+
+                <ImageView
+                    android:id="@+id/Id_Iv_Mail"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/mail_msg"
+                    app:layout_constraintBottom_toTopOf="@+id/Id_Iv_Map"
+                    app:layout_constraintStart_toStartOf="@+id/Id_Iv_Mobile"
+                    app:layout_constraintTop_toTopOf="@+id/Id_Tv_Mail" />
+
+                <ImageView
+                    android:id="@+id/Id_Iv_Map"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/location"
+                    app:layout_constraintStart_toStartOf="@+id/Id_Iv_Mail"
+                    app:layout_constraintTop_toTopOf="@+id/Id_Tv_Map" />
+
+                <TextView
+                    android:id="@+id/Id_Tv_Map"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="ZopNow, 19th main Sector -1, HSR Layout Bangalore "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/Id_Tv_Mail"
+                    app:layout_constraintTop_toBottomOf="@+id/Id_Tv_Mail" />
+
+
+                <TextView
+                    android:id="@+id/Id_Tv_Joined"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Joined On : "
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/Id_Tv_Map"
+                    app:layout_constraintTop_toTopOf="@+id/Id_Iv_Joined" />
+
+                <ImageView
+                    android:id="@+id/Id_Iv_Joined"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/calendar"
+                    app:layout_constraintStart_toStartOf="@+id/Id_Iv_Map"
+                    app:layout_constraintTop_toBottomOf="@+id/Id_Iv_Map" />
+
+                <TextView
+                    android:id="@+id/Id_Tv_Joined_Date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="1st April 2015"
+                    android:textIsSelectable="false"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/Id_Tv_Joined"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Id_Tv_Joined" />
+
+                <ImageView
+                    android:id="@+id/Id_Iv_Cake"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/cake"
+                    app:layout_constraintStart_toStartOf="@+id/Id_Iv_Joined"
+                    app:layout_constraintTop_toBottomOf="@+id/Id_Iv_Joined" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birthday : "
+                    app:layout_constraintStart_toStartOf="@+id/Id_Tv_Joined"
+                    app:layout_constraintTop_toTopOf="@+id/Id_Iv_Cake" />
+
+                <TextView
+                    android:id="@+id/Id_Tv_Birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="27 July 1993"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
+                    app:layout_constraintStart_toEndOf="@+id/textView11" />
+
+                <ImageView
+                    android:id="@+id/Id_Iv_Blood"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/blood_drop"
+                    app:layout_constraintStart_toStartOf="@+id/Id_Iv_Cake"
+                    app:layout_constraintTop_toBottomOf="@+id/Id_Iv_Cake" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group : "
+                    app:layout_constraintStart_toStartOf="@+id/textView11"
+                    app:layout_constraintTop_toTopOf="@+id/Id_Iv_Blood" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/pan"
+                    app:layout_constraintStart_toStartOf="@+id/Id_Iv_Blood"
+                    app:layout_constraintTop_toBottomOf="@+id/Id_Iv_Blood" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" PAN Number : "
+                    app:layout_constraintStart_toStartOf="@+id/textView13"
+                    app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+                <TextView
+                    android:id="@+id/Id_Tv_BloodGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A +"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
+                    app:layout_constraintStart_toEndOf="@+id/textView13" />
+
+                <TextView
+                    android:id="@+id/Id_Tv_PanNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CEAPK0824A"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
+                    app:layout_constraintStart_toEndOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Bank Details"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/imageView8"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+                <TextView
+
+                    android:id="@+id/Id_Tv_Bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Bank Name : "
+                    app:layout_constraintStart_toStartOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <TextView
+                    android:id="@+id/Id_TV_BankName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ICICI  Bank Ltd."
+                    app:layout_constraintBaseline_toBaselineOf="@+id/Id_Tv_Bank"
+                    app:layout_constraintStart_toEndOf="@+id/Id_Tv_Bank" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Branch Name : "
+                    app:layout_constraintStart_toStartOf="@+id/Id_Tv_Bank"
+                    app:layout_constraintTop_toBottomOf="@+id/Id_Tv_Bank" />
+
+                <TextView
+                    android:id="@+id/Id_Tv_branchName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HSR Layout"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView19"
+                    app:layout_constraintStart_toEndOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Account Number : "
+                    app:layout_constraintStart_toStartOf="@+id/textView19"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/Id_Tv_AccountNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="141701521406"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView22"
+                    app:layout_constraintStart_toEndOf="@+id/textView22" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="IFSC : "
+                    app:layout_constraintStart_toStartOf="@+id/textView22"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <TextView
+                    android:id="@+id/Id_Tv_IfscCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ICIC0001417"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView24"
+                    app:layout_constraintStart_toEndOf="@+id/textView24" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Emergency Details"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView24"
+                    app:layout_constraintTop_toBottomOf="@+id/Id_Tv_IfscCode" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Name : "
+                    app:layout_constraintStart_toStartOf="@+id/textView26"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aman Kumar"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
+                    app:layout_constraintStart_toEndOf="@+id/textView27" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Number : "
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView27"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7022266557"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView31"
+                    app:layout_constraintStart_toEndOf="@+id/textView31"
+                    />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
