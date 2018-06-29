@@ -1,6 +1,5 @@
 package com.example.aman.adminproject;
 
-import android.app.Fragment;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -9,15 +8,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.MenuItem;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.FrameLayout;
-import android.widget.Toast;
-import android.widget.ToggleButton;
 
 public class HomeActivity extends AppCompatActivity {
     Context context;
@@ -77,9 +69,9 @@ public class HomeActivity extends AppCompatActivity {
                                         new MyTeamFragment(), "team").commit();
                                 break;
 
-                            case R.id.Id_Approval:
+                            case R.id.Id_TeamLeaves:
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                                        new PendingLeaveFragment(), "pendingLeaves").commit();
+                                        new TeamLeavesFragment(), "pendingLeaves").commit();
                                 break;
 
                             case R.id.Id_Tickets:

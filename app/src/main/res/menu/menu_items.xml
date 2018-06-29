@@ -17,13 +17,13 @@
         android:icon="@drawable/team"
         android:title="My Team" />
 
-    <item
-        android:id="@+id/Id_Approval"
-        android:icon="@drawable/pendingleave"
-        android:title="Pending Approval" />
+    <!--<item-->
+        <!--android:id="@+id/Id_Pending_Approval"-->
+        <!--android:icon="@drawable/pendingleave"-->
+        <!--android:title="Pending Approval" />-->
     <item
         android:id="@+id/Id_TeamLeaves"
-        android:icon="@drawable/leaves"
+        android:icon="@drawable/pendingleave"
         android:title="Team Leaves" />
 
     <item

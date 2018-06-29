@@ -66,7 +66,7 @@ public class MyTeamFragment extends Fragment {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             circleImageView2.setTooltipText("Ritesh, System Admin, 7022266557");
         } else {
-            TooltipCompat.setTooltipText(circleImageView2, "Ritesh, System Admin, 7022266557");
+            TooltipCompat.setTooltipText(circleImageView2, "Ritesh, \n System Admin,\n 7022266557");
         }
 
     }
