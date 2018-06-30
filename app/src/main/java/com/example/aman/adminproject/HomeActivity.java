@@ -1,11 +1,13 @@
 package com.example.aman.adminproject;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -81,7 +83,7 @@ public class HomeActivity extends AppCompatActivity {
 
                             case R.id.Id_Setting:
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                                        new SettingFragment(), "Setting").commit();
+                                        new SettingsFragment(), "Setting").commit();
                                 break;
                         }
                         drawerLayout.closeDrawer(GravityCompat.START);
@@ -109,14 +111,29 @@ public class HomeActivity extends AppCompatActivity {
     @Override
 //    to not close app on backPress
     public void onBackPressed() {
+
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+
+            new AlertDialog.Builder(this)
+                    .setIcon(R.drawable.alert_icon)
+                    .setTitle("Alert")
+                    .setMessage("Do you want to close this App ?")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finish();
+                        }
+
+                    })
+
+                    .setNegativeButton("No", null)
+                    .show();
         }
 
-
     }
+
 
     //hamburgerItem, navigation drawer select
     @Override
@@ -128,10 +145,14 @@ public class HomeActivity extends AppCompatActivity {
 
 
     }
+
+
 //    public  void toolBar(){
 //
 //        Toolbar toolbar = findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 //        getSupportActionBar().setDisplayShowHomeEnabled(true);
 //    }
+
+
 }

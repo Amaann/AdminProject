@@ -1,7 +1,9 @@
 package com.example.aman.adminproject;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +11,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +36,10 @@ public class MainActivity extends AppCompatActivity {
         initView();
     }
 
+
     private void initView() {
+
+
         loginButton = findViewById(R.id.Id_Login_button);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
@@ -41,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(login()){
+                if (login()) {
+                    Toast.makeText(context, "Login Successful", Toast.LENGTH_SHORT).show();
                     nextActivity();
                 }
             }
@@ -58,5 +65,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
 
 }

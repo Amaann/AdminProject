@@ -1,21 +1,22 @@
 package com.example.aman.adminproject;
 
 import android.content.Context;
-import android.net.Uri;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class SettingFragment extends Fragment {
+public class SettingsFragment extends Fragment {
 
     View view;
     TextView  textView;
 
-    public SettingFragment() {
+    public SettingsFragment() {
         // Required empty public constructor
     }
 
@@ -26,17 +27,16 @@ public class SettingFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-         view= inflater.inflate(R.layout.fragment_setting, container, false);
+         view= inflater.inflate(R.layout.fragment_settings, container, false);
          initView();
         return view;
     }
 
-    public void initView(){
+    public void initView() {
         textView = view.findViewById(R.id.textViewSetting);
-        textView.setText("Setting Fragment");
+        textView.setText("Settings Fragment");
 
     }
-
 
     @Override
     public void onAttach(Context context) {super.onAttach(context);

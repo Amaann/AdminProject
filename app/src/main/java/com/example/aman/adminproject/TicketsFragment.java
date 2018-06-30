@@ -34,8 +34,8 @@ public class TicketsFragment extends Fragment {
     }
 
     private void initView() {
-        textView = v.findViewById(R.id.textViewTickets);
-        textView.setText("Tickets");
+//        textView = v.findViewById(R.id.textViewTickets);
+//        textView.setText("Tickets");
     }
 
     @Override
