@@ -18,18 +18,13 @@ public class HomeActivity extends AppCompatActivity {
     ActionBarDrawerToggle drawerToggle;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    android.support.v7.widget.Toolbar toolbar;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-//        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-//        getSupportActionBar().hide(); // hide the title bar
-
-//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-//                WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
 
         setContentView(R.layout.activity_home);
         context = this;
@@ -39,6 +34,10 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void initView() {
+
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
 
         drawerLayout = findViewById(R.id.Id_DrawerLayout);
         navigationView = findViewById(R.id.Id_NavView);
@@ -77,6 +76,7 @@ public class HomeActivity extends AppCompatActivity {
                                 break;
 
                             case R.id.Id_Tickets:
+
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                                         new TicketsFragment(), "Tickets").commit();
                                 break;
@@ -145,14 +145,6 @@ public class HomeActivity extends AppCompatActivity {
 
 
     }
-
-
-//    public  void toolBar(){
-//
-//        Toolbar toolbar = findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setDisplayShowHomeEnabled(true);
-//    }
 
 
 }

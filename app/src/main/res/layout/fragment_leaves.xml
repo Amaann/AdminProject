@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#999595"
+    android:background="#f2f9ff"
     tools:context=".LeavesFragment">
-
 
     <android.support.v7.widget.CardView
         android:id="@+id/Id_CardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="30dp"
-        app:cardCornerRadius="11dp">
+        app:cardCornerRadius="11dp"
+        app:cardElevation="8dp">
 
 
         <android.support.constraint.ConstraintLayout
@@ -145,9 +145,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="TYPE OF LEAVE"
+                android:textColor="#333333"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:textColor="#333333"
                 app:layout_constraintStart_toStartOf="@+id/Id_Cl_LeaveDateFrom"
                 app:layout_constraintTop_toBottomOf="@+id/Id_Cl_LeaveDateFrom" />
 
@@ -159,8 +159,7 @@
                 android:layout_marginTop="20dp"
                 app:layout_constraintEnd_toEndOf="@+id/Id_Cl_LeaveDateTo"
                 app:layout_constraintStart_toStartOf="@+id/textView2"
-                app:layout_constraintTop_toBottomOf="@+id/textView2"
-                />
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -168,9 +167,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="REASON FOR LEAVE"
+                android:textColor="#80959d"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:textColor="#80959d"
                 app:layout_constraintStart_toStartOf="@+id/spinner"
                 app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
@@ -195,9 +194,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:backgroundTint="@color/buttonColor"
                 android:text="apply"
                 android:textColor="#ffffff"
-                android:backgroundTint="@color/buttonColor"
                 app:layout_constraintEnd_toEndOf="@+id/editText"
                 app:layout_constraintStart_toStartOf="@+id/editText"
                 app:layout_constraintTop_toBottomOf="@+id/editText" />
