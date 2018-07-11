@@ -15,7 +15,6 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-
             android:layout_height="wrap_content"
             android:background="#ffffff">
 
@@ -48,6 +47,8 @@
                 android:id="@+id/editText2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/edit_text_box"
                 android:ems="10"
@@ -74,8 +75,6 @@
                 android:id="@+id/editText3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/edit_text_box"
                 android:ems="10"
@@ -171,6 +170,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
             <co.ceryle.radiorealbutton.RadioRealButtonGroup
+                android:id="@+id/Id_RadioBtGroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -195,7 +195,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView10"
                     app:rrb_ripple="false"
                     app:rrb_rippleColor="@color/buttonColor"
-                    app:rrb_text="All" />
+                    app:rrb_text="Normal" />
 
                 <co.ceryle.radiorealbutton.RadioRealButton
                     android:id="@+id/radioBt2"
@@ -203,7 +203,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toEndOf="@+id/radioBt1"
                     app:layout_constraintTop_toTopOf="@+id/radioBt1"
-                    app:rrb_text="Normal" />
+                    app:rrb_text="High" />
 
                 <co.ceryle.radiorealbutton.RadioRealButton
                     android:id="@+id/radioBt3"
@@ -211,11 +211,8 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toEndOf="@+id/radioBt2"
                     app:layout_constraintTop_toTopOf="@+id/radioBt2"
-                    app:rrb_text="High" />
-
-
+                    app:rrb_text="Critical" />
             </co.ceryle.radiorealbutton.RadioRealButtonGroup>
-
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
