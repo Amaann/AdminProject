@@ -36,8 +36,27 @@
         <item>Sarjapur</item>
         <item>MDP</item>
         <item>Meenakshi</item>
+    </string-array>
 
+    <string-array name="watchers">
+        <item>Vikash </item>
+        <item>Maitreyi</item>
+        <item>Vageesha</item>
+        <item>Anup</item>
+    </string-array>
 
-       </string-array>
+    <string-array name="assignedTo">
+        <item>Admin </item>
+        <item>Tech</item>
+        <item>Hr</item>
+        <item>Operation</item>
+    </string-array>
+
+    <string-array name="ticketSlot">
+        <item>Morning </item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+        <item>Night</item>
+    </string-array>
 
 </resources>

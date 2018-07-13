@@ -112,7 +112,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText7" />
 
             <Spinner
-                android:id="@+id/spinner2"
+                android:id="@+id/Id_Spinner_Watchers"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -128,8 +128,8 @@
                 android:text="Product Id"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/spinner2"
-                app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+                app:layout_constraintStart_toStartOf="@+id/Id_Spinner_Watchers"
+                app:layout_constraintTop_toBottomOf="@+id/Id_Spinner_Watchers" />
 
             <EditText
                 android:id="@+id/editText9"
@@ -142,7 +142,7 @@
                 android:inputType="textPersonName"
                 android:padding="6dp"
                 android:textSize="15sp"
-                app:layout_constraintEnd_toEndOf="@+id/spinner2"
+                app:layout_constraintEnd_toEndOf="@+id/Id_Spinner_Watchers"
                 app:layout_constraintStart_toStartOf="@+id/textView16"
                 app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -214,7 +214,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText11" />
 
             <Spinner
-                android:id="@+id/spinner3"
+                android:id="@+id/Id_Spinner_AssignedTo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -230,15 +230,15 @@
                 android:text="Ticket Slot"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/spinner3"
-                app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+                app:layout_constraintStart_toStartOf="@+id/Id_Spinner_AssignedTo"
+                app:layout_constraintTop_toBottomOf="@+id/Id_Spinner_AssignedTo" />
 
             <Spinner
-                android:id="@+id/spinner4"
+                android:id="@+id/Id_Spinner_TicketSlot"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                app:layout_constraintEnd_toEndOf="@+id/spinner3"
+                app:layout_constraintEnd_toEndOf="@+id/Id_Spinner_AssignedTo"
                 app:layout_constraintStart_toStartOf="@+id/textView25"
                 app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
@@ -250,16 +250,16 @@
                 android:text="Select Store"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/spinner4"
-                app:layout_constraintTop_toBottomOf="@+id/spinner4" />
+                app:layout_constraintStart_toStartOf="@+id/Id_Spinner_TicketSlot"
+                app:layout_constraintTop_toBottomOf="@+id/Id_Spinner_TicketSlot" />
 
             <Spinner
-                android:id="@+id/spinner5"
+                android:id="@+id/Id-Spinner_SelectStore"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:spinnerMode="dropdown"
-                app:layout_constraintEnd_toEndOf="@+id/spinner4"
+                app:layout_constraintEnd_toEndOf="@+id/Id_Spinner_TicketSlot"
                 app:layout_constraintStart_toStartOf="@+id/textView29"
                 app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
@@ -271,8 +271,8 @@
                 android:text="Priority"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/spinner5"
-                app:layout_constraintTop_toBottomOf="@+id/spinner5"/>
+                app:layout_constraintStart_toStartOf="@+id/Id-Spinner_SelectStore"
+                app:layout_constraintTop_toBottomOf="@+id/Id-Spinner_SelectStore"/>
 
 
 
