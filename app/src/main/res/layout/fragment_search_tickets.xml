@@ -128,6 +128,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                style="@style/spinner_style"
+                android:overlapAnchor="false"
                 app:layout_constraintEnd_toEndOf="@+id/editText4"
                 app:layout_constraintStart_toStartOf="@+id/textView9"
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />

@@ -45,15 +45,13 @@ public class CreatesTicketFragment extends Fragment {
         spinnerAssignedto.setAdapter(arrayAdapterAssignedto);
 
 
-        arrayAdapterTicketSlot = ArrayAdapter.createFromResource(getActivity(),R.array.ticketSlot, android.R.layout.simple_spinner_item);
+        arrayAdapterTicketSlot = ArrayAdapter.createFromResource(getActivity(), R.array.ticketSlot, android.R.layout.simple_spinner_item);
         arrayAdapterTicketSlot.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         spinnerTicketSlot.setAdapter(arrayAdapterTicketSlot);
 
         arrayAdapterSelectStore = ArrayAdapter.createFromResource(getActivity(), R.array.Warehouse, android.R.layout.simple_spinner_item);
         arrayAdapterSelectStore.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         spinnerSelectStore.setAdapter(arrayAdapterSelectStore);
-
-
 
 
     }
