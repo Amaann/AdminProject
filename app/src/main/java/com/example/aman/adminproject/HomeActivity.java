@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     android.support.v7.widget.Toolbar toolbar;
-
+    int selectedItem = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +49,11 @@ public class HomeActivity extends AppCompatActivity {
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
+                        if(selectedItem == item.getItemId()){
+                            return false;
+                        }else{
+                            selectedItem = item.getItemId();
+                        }
                         switch (item.getItemId()) {
                             case R.id.Id_Profile:
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
